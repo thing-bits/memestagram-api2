@@ -24,7 +24,7 @@ METHOD | ENDPOINT   | TOKEN | DESCRIPTION                   | POST PARAMS       
 -------|------------|-------|-------------------------------|-------------------------------------------------|--------------------------------
 GET    | /profile   | YES   | Shows registered user profile |  -                                              | name, username, email, posts
 PUT    | /profile   | YES   | Update user profile           | email, name, password                           | updated user data
-DELETE | /profile   | YES   | Deletes user profile          | -                                               | confirmation of deleted user
+DELETE | /profile   | YES   | Deletes user profile          | password                                        | confirmation of deleted user
 
 
 ### User Endpoints
