@@ -14,7 +14,7 @@ METHOD | ENDPOINT         | TOKEN | DESCRIPTION              | POST PARAMS      
 -------|------------------|-------|--------------------------|-------------------------------------------------|-----------------------------
 POST   | /auth/signup     | -     | User Signup              | name, username, email, password                 | token
 POST   | /auth/login      | -     | User Login               | username, password                              | token
-POST   | /auth/check      | YES   | Auth Token check         | -                                               |
+GET   | /auth/check      | YES   | Auth Token check         | -                                               |
 
 
 
