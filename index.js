@@ -10,7 +10,7 @@ const cors = require('cors')
     })
     console.log('Conectado a la DB')
   } catch (error) {
-    throw new Error ()
+    throw new Error ('Cannot connect to DB')
   }
 })()
 
@@ -21,7 +21,7 @@ try  {
     .use(cors())
     .use(morgan('dev'))
     .use(express.json())
-    // .use('/api', require('./src/routes'))
+    .use('/api', require('./src/routes'))
     .use('/', (req, res) => {
       res.send('Welcome to Memestagram API')
     })
@@ -29,6 +29,6 @@ try  {
       console.log('Server golisneando')
     })
 } catch (error) {
-  throw new Error (`Can't start Express`)
+  throw new Error (`Can't start Express: ${error}`)
 }
 

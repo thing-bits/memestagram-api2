@@ -19,8 +19,10 @@
   },
   "homepage": "https://github.com/adrian-diez/memestagram-api2#readme",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "cors": "^2.8.5",
     "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.1.10",
     "morgan": "^1.10.0"
   }
